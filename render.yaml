@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: proptrack-api
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: TRADOVATE_CID
+        sync: false
+      - key: TRADOVATE_SEC
+        sync: false
